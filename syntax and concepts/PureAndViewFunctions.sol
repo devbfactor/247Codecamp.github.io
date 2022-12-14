@@ -19,7 +19,7 @@ contract ViewAndPureFunction {
     }
 
     /* 
-    The 'addTwoNumbers' function will return the sum of the two parameter 'uint256 a' and 'uint256 b' but it does not change anything or read anything from the state.
+    The 'addTwoNumbers' function will return the sum of 'uint256 a' and 'uint256 b' but it does not change anything or read anything from the state.
     The value will be coming fron the input.
     */
 
