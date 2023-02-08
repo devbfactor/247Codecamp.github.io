@@ -19,7 +19,7 @@ contract SimpleToken is ERC20, Ownable {
         and the amount of tokens in decimals.
         This _mint function will be called as soon as the contract is deployed.
         */
-        _mint(msg.sender, 10000 * 10**27); //1 Billion Tokens
+        _mint(msg.sender, 100 * 10 ** 18); //1 Billion Tokens
     }
 
     /*mint function creates `amount` tokens and assigns them to `account`, 

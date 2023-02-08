@@ -1,3 +1,4 @@
+export const CRYPTODEVS_CONTRACT = "0x3f6CDf65D52263A8FEa224C50fD01f3F6e5c9996"
 export const abi = [
     {
       "inputs": [
@@ -581,4 +582,3 @@ export const abi = [
       "type": "receive"
     }
   ]
-export const NFT_CONTRACT_ADDRESS = "0x1c169E50174d824D43972d301105f1138c6E584c";

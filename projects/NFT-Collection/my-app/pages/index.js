@@ -1,9 +1,9 @@
 import { Contract, providers, utils } from "ethers";
-import Head from "next/head";
+import Head from "next/head"; // stored in public-html --> creat-react-app
 import React, { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
-import { abi, NFT_CONTRACT_ADDRESS } from "../constants";
-import styles from "../styles/Home.module.css";
+import { abi, CRYPTODEVS_CONTRACT } from "../constants";
+import styles from "../styles/Home.module.css"; // app.css for create-react-app
 
 export default function Home() {
 
