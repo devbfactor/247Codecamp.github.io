@@ -4,10 +4,12 @@ pragma solidity ^0.8.0;
 library SafeMath {
     function add(uint x, uint y) internal pure returns (uint) {
         uint z = x + y;
+
         require(z >= x, "overflow happened");
         require(y >= y, "overflow happened");
         return z;
     }
+
 }
 
 contract Libraries {
@@ -40,6 +42,7 @@ contract Libraries {
      * a + b = 259, but uint8 can only store value 0 to 255, which exceeds the maximum value.
      * the value of C after this statement would be 4 but you expected it to be 259 because it will circle back to 0;
      */
+
 
     function testAddition(uint x, uint y) public pure returns (uint) {
         return SafeMath.add(x, y);

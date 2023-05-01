@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-interface MinimalERC20 {
+interface IMinimalERC20 {
     // we just need to include function definitions for the functions we care about.
     // we don't need an interface for the ENTIRE contract if we are not using those
     function balanceOf(address account) external view returns (uint256);
@@ -28,10 +28,10 @@ contract ExternalCaller {
      *
      */
 
-    MinimalERC20 externalContract;
+    IMinimalERC20 externalContract;
 
     constructor(address someERC20Contract) {
-        externalContract = MinimalERC20(someERC20Contract);
+        externalContract = IMinimalERC20(someERC20Contract);
     }
 
     function doIHaveBalance() public view {
