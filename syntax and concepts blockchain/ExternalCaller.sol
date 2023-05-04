@@ -28,7 +28,7 @@ contract ExternalCaller {
      *
      */
 
-    IMinimalERC20 externalContract;
+    IMinimalERC20 externalContract;  
 
     constructor(address someERC20Contract) {
         externalContract = IMinimalERC20(someERC20Contract);
